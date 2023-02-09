@@ -7,6 +7,8 @@ FROM openproject/community:12.0.10
 
 COPY Gemfile.plugins /app/
 
+COPY ./enterprise_token.rb app/models/enterprise_token.rb
+
 # If the plugin uses any external NPM dependencies you have to install them here.
 # RUN npm add npm <package-name>*
 
